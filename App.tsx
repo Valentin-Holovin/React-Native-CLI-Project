@@ -1,8 +1,8 @@
 import React from 'react';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
-import { StyleSheet, Text, View } from 'react-native';
-import { useTranslation } from 'react-i18next';
+import { StyleSheet } from 'react-native';
+import { RootNavigator } from 'navigation/RootNavigation';
 
 const styles = StyleSheet.create({
   layout: {
@@ -10,18 +10,12 @@ const styles = StyleSheet.create({
   },
 });
 
-const App = () => {
-  const { t } = useTranslation();
-
-  return (
-    <GestureHandlerRootView style={styles.layout}>
-      <SafeAreaProvider>
-        <View>
-          <Text>{t('text')}</Text>
-        </View>
-      </SafeAreaProvider>
-    </GestureHandlerRootView>
-  );
-};
+const App = () => (
+  <GestureHandlerRootView style={styles.layout}>
+    <SafeAreaProvider>
+      <RootNavigator />
+    </SafeAreaProvider>
+  </GestureHandlerRootView>
+);
 
 export default App;
