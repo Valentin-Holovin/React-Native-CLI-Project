@@ -1,8 +1,8 @@
-import { Box, Text, FontFamily } from 'themes';
+import { Box, Text } from 'themes';
 import React from 'react';
 
 export const Welcome = () => (
   <Box wdp>
-    <Text ff={FontFamily.OpenSansBold}>Hello MONGOLOID</Text>
+    <Text>Hello MONGOLOID</Text>
   </Box>
 );

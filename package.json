@@ -11,7 +11,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint . --ext .js,.jsx,.ts,.tsx --fix",
     "pre-commit": "lint-staged",
-    "typescript": "tsc"
+    "typescript": "tsc --noEmit"
   },
   "dependencies": {
     "@react-navigation/native": "^6.1.6",
