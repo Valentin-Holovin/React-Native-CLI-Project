@@ -15,7 +15,7 @@ export const FontSizes = {
   '9xl': 128,
 };
 
-export const FontsFamily = {
+export const FontFamily = {
   OpenSans: 'OpenSans-Regular',
   OpenSansItalic: 'OpenSans-Italic',
   OpenSansMedium: 'OpenSans-Medium',

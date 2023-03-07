@@ -1,8 +1,8 @@
-import { Text, View } from 'react-native';
+import { Box, Text, FontFamily } from 'themes';
 import React from 'react';
 
 export const Welcome = () => (
-  <View>
-    <Text>Welcome</Text>
-  </View>
+  <Box wdp>
+    <Text ff={FontFamily.OpenSansBold}>Hello MONGOLOID</Text>
+  </Box>
 );
